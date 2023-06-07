@@ -8,10 +8,14 @@ class SizeConfig {
   static double? blockSizeVertical;
 
   void init(BuildContext context) {
-    mediaQueryData = MediaQuery.of(context);
-    screenWidth = mediaQueryData!.size.width;
-    screenHeight = mediaQueryData!.size.height;
-    blockSizeHorizontal = screenWidth! / 100;
-    blockSizeVertical = screenWidth! / 100;
+    // Orvala edit disini
+
+    // mediaQueryData
+    // screenWidth
+    // screenHeight
+    // blockSizeHorizontal
+    // blockSizeVertical
+
+    // End edit
   }
 }

@@ -37,7 +37,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: isDarkModeEnabled ? ThemeData.dark() : ThemeData.light(),
+      // Orvala edit disini untuk theme
       home: Scaffold(
         appBar: AppBar(
           title: Text('Settings'),
@@ -47,9 +47,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ListTile(
               title: Text('Dark Mode'),
               trailing: Switch(
-                value: isDarkModeEnabled,
-                onChanged: toggleDarkMode,
-              ),
+                  // Orvala edit disini
+                  // clue switch dark mode
+                  ),
             ),
             ElevatedButton(
               child: Text('Login'),
