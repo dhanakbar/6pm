@@ -125,7 +125,7 @@ class Tournament_screen extends StatelessWidget {
           SizedBox(
             height: 580,
             child: ListView.builder(
-              itemCount: foto.length,
+              itemCount: // Arialdi panggil length foto,
               scrollDirection: Axis.vertical,
               itemBuilder: (BuildContext context, int index) {
                 return Container(
@@ -148,12 +148,14 @@ class Tournament_screen extends StatelessWidget {
                     leading: Column(
                       children: [
                         Flexible(
-                          child: Image.network(foto[index]["foto1"],
+                          child: Image.network(
+                              // Arialdi panggil objek pada foto1,
                               fit: BoxFit.cover),
                         ),
                         SizedBox(height: 5),
                         Flexible(
-                          child: Image.network(foto[index]["foto2"],
+                          child: Image.network(
+                              // Arialdi panggil objek pada foto2,
                               fit: BoxFit.cover),
                         ),
                       ],
@@ -161,18 +163,15 @@ class Tournament_screen extends StatelessWidget {
                     title: Text(
                       'NAVI',
                       style: kPoppinsSemiBold.copyWith(
-                          fontSize: SizeConfig.blockSizeHorizontal! * 5),
+                          fontSize: // panggil config blockSizeHorizontal * 5),
                     ),
                     subtitle: Text(
                       'Faze',
                       style: kPoppinsSemiBold.copyWith(
-                          fontSize: SizeConfig.blockSizeHorizontal! * 5),
+                          fontSize: // panggil config blockSizeHorizontal * 5),
                     ),
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Tournament_detail()));
+                      // Arialdi panggil ke turnamen detail
                     },
                   ),
                 );
