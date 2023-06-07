@@ -15,27 +15,29 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   List _get = [];
   void initState() {
-    super.initState();
-    _getData();
+    // Andruw edit disini
+
+    // clue initial state dan call get state
+
+    // end of edit
   }
 
   Future _getData() async {
     try {
-      final response = await http.get(Uri.parse(
-          "https://newsapi.org/v2/top-headlines?country=us&apiKey=5aae54827e234012a40622562bbe190b"));
-      // return jsonDecode(response.body);
+      // Andruw edit disini
 
-      // untuk cek data
+      // clue response "https://newsapi.org/v2/top-headlines?country=us&apiKey=5aae54827e234012a40622562bbe190b"
+
       if (response.statusCode == 200) {
-        print(response.body);
-        final data = jsonDecode(response.body);
+        // clue Decode data
         setState(() {
-          _get = data['articles'];
+          // clue set to state _get
         });
       }
     } catch (e) {
       print(e);
     }
+    // End edit
   }
 
   @override
