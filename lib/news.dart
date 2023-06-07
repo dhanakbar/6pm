@@ -15,7 +15,7 @@ class NewsScreen extends StatefulWidget {
 
 class _NewsScreenState extends State<NewsScreen>
     with SingleTickerProviderStateMixin {
-  List _get = [];
+  // List _get = [];
   List<Tab> _tablist = [
     Tab(
       child: Text("Dota 2"),
@@ -40,24 +40,22 @@ class _NewsScreenState extends State<NewsScreen>
   late TabController _tabController;
   @override
   void initState() {
-    super.initState();
-    _tabController = TabController(vsync: this, length: _tablist.length);
-    _getData();
+    // Ghozal edit disini
+
+    // clue initial state dan call get state dan set controller tab
+
+    // end of edit
   }
 
   Future _getData() async {
     try {
-      final response = await http.get(Uri.parse(
-          "https://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=5aae54827e234012a40622562bbe190b"));
-      // return jsonDecode(response.body);
+      // Ghozal edit disini
+
+      // clue fetching ""https://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=5aae54827e234012a40622562bbe190b""
 
       // untuk cek data
       if (response.statusCode == 200) {
-        print(response.body);
-        final data = jsonDecode(response.body);
-        setState(() {
-          _get = data['articles'];
-        });
+        // Clue decode dan set to get
       }
     } catch (e) {
       print(e);
@@ -117,14 +115,9 @@ class _NewsScreenState extends State<NewsScreen>
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (c) => DetailPage(
-                    url: _get[index]['url'],
-                    title: _get[index]['title'],
-                    content: _get[index]['content'],
-                    urlToImage: _get[index]['urlToImage'],
-                    author: _get[index]['author'],
-                    publishedAt: _get[index]['publishedAt'],
-                  ),
+                  builder: (c) => 
+                  // Ghozal edit disini
+                  // panggil detail page
                 ),
               );
             },
