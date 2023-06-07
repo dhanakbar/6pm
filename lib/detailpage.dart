@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatelessWidget {
-  final url, title, content, publishedAt, author, urlToImage;
+  // Zarvah initial parameter
 
   DetailPage(
-      {this.title = "",
-      this.url = "",
-      this.content,
-      this.publishedAt,
-      this.author,
-      this.urlToImage});
+      // Zarvah edit disini
+      // clue initial props (parameter)
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +24,7 @@ class DetailPage extends StatelessWidget {
       body: Column(
         children: <Widget>[
           urlToImage != null
-              ? Image.network(urlToImage)
+              ? // Zarvah link to image url dari parameter
               : Container(
                   margin: EdgeInsets.all(20),
                   height: 250,
@@ -54,10 +51,10 @@ class DetailPage extends StatelessWidget {
                 SizedBox(
                   height: 5,
                 ),
-                Text('$content'),
+                // Zarvah panggil text dengan parameter content,
                 Divider(),
-                Text('$author'),
-                Text('$url'),
+                // Zarvah panggil text dengan parameter author,
+                // Zarvah panggil text dengan parameter url,
               ],
             ),
           )
