@@ -7,9 +7,11 @@ import 'package:polres/components/square_tile.dart';
 class LoginPage extends StatelessWidget {
   static const routeLogin = '/login';
 
-  // text editing controllers
-  final usernameController = TextEditingController();
-  final passwordController = TextEditingController();
+  //  Aditya edit disini
+
+  // Clue variable controller
+
+  // End edit
 
   // sign user in method
   void signUserIn() {}
@@ -31,33 +33,21 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 50),
 
               // welcome back, you've been missed!
-              Text(
-                'Welcome back you\'ve been missed!',
-                style: TextStyle(
-                  color: Colors.grey[700],
-                  fontSize: 16,
-                ),
-              ),
+              //  Aditya edit disini
+
+              // Text welcomback
+
+              // End Edit
 
               const SizedBox(height: 25),
 
               // username textfield
-              MyTextField(
-                controller: usernameController,
-                hintText: 'Username',
-                obscureText: false,
-              ),
 
-              const SizedBox(height: 10),
+              //  Aditya edit disini
 
-              // password textfield
-              MyTextField(
-                controller: passwordController,
-                hintText: 'Password',
-                obscureText: true,
-              ),
+              // Clue field controller username dan password
 
-              const SizedBox(height: 10),
+              //  End of edit
 
               // forgot password?
               Padding(
